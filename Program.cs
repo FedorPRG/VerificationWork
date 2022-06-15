@@ -29,5 +29,4 @@ Console.Write("Введите строки массива, разделенны�
 string a = Console.ReadLine()!;
 char[] separators = new char[] { ' ', '.', ',' };
 string[] startArray = a.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-string[] finishArray = Solve(startArray);
-Console.Write(PrintarrayString(startArray) + "->" + PrintarrayString(finishArray));
+Console.Write(PrintarrayString(startArray) + "->" + PrintarrayString(Solve(startArray)));
